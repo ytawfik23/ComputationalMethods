@@ -1,0 +1,762 @@
+#LyX 2.4 created this file. For more info see https://www.lyx.org/
+\lyxformat 620
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass article
+\begin_preamble
+% Added by lyx2lyx
+\setlength{\parskip}{\bigskipamount}
+\setlength{\parindent}{0pt}
+\end_preamble
+\use_default_options true
+\maintain_unincluded_children no
+\language english
+\language_package default
+\inputencoding auto-legacy
+\fontencoding auto
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_roman_osf false
+\font_sans_osf false
+\font_typewriter_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures true
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\float_placement H
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry true
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date true
+\justification true
+\use_refstyle 1
+\use_formatted_ref 0
+\use_minted 0
+\use_lineno 0
+\index Index
+\shortcut idx
+\color #b5bd68
+\end_index
+\leftmargin 3cm
+\topmargin 3cm
+\rightmargin 3cm
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style english
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tablestyle default
+\listings_params "basicstyle={\ttfamily\small}"
+\tracking_changes false
+\output_changes false
+\change_bars false
+\postpone_fragile_content false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\docbook_table_output 0
+\docbook_mathml_prefix 1
+\end_header
+
+\begin_body
+
+\begin_layout Title
+Computational Physics 1
+\end_layout
+
+\begin_layout Date
+Youssef Tawfik
+\end_layout
+
+\begin_layout Section*
+Problem 1
+\end_layout
+
+\begin_layout Standard
+Created an empty file named exp.cpp
+\end_layout
+
+\begin_layout Standard
+\begin_inset Box Boxed
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset CommandInset include
+LatexCommand lstinputlisting
+filename "EX1/exp.cpp"
+literal "true"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Ran the four utilities which had the following outputs.
+ ldd shows the libc.so.6 library being linked.
+ passing nm exp through c++filt doesn't do anything,
+ I assume that is because there is nothing to demangle.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Box Boxed
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status collapsed
+
+\begin_layout Plain Layout
+$ ldd exp
+\end_layout
+
+\begin_layout Plain Layout
+linux-vdso.so.1 (0x00007ffc815eb000)
+\end_layout
+
+\begin_layout Plain Layout
+libc.so.6 => /lib/x86_64-linux-gnu/libc.so.6 (0x0000793d82e00000)
+\end_layout
+
+\begin_layout Plain Layout
+/lib64/ld-linux-x86-64.so.2 (0x0000793d83061000)
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Box Boxed
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status collapsed
+
+\begin_layout Plain Layout
+$ file exp
+\end_layout
+
+\begin_layout Plain Layout
+exp:
+ ELF 64-bit LSB pie executable,
+ x86-64,
+ version 1 (SYSV),
+ dynamically linked,
+ interpreter /lib64/ld-linux-x86-64.so.2,
+ BuildID[sha1]=f86c8dd4409f23226ca892edc4a0f62a4df170dc,
+ for GNU/Linux 3.2.0,
+ not stripped
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Box Boxed
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status collapsed
+
+\begin_layout Plain Layout
+$nm exp | c++filt
+\end_layout
+
+\begin_layout Plain Layout
+000000000000038c r __abi_tag
+\end_layout
+
+\begin_layout Plain Layout
+0000000000004010 B __bss_start
+\end_layout
+
+\begin_layout Plain Layout
+0000000000004010 b completed.0
+\end_layout
+
+\begin_layout Plain Layout
+w __cxa_finalize@GLIBC_2.2.5
+\end_layout
+
+\begin_layout Plain Layout
+0000000000004000 D __data_start
+\end_layout
+
+\begin_layout Plain Layout
+0000000000004000 W data_start
+\end_layout
+
+\begin_layout Plain Layout
+0000000000001070 t deregister_tm_clones
+\end_layout
+
+\begin_layout Plain Layout
+00000000000010e0 t __do_global_dtors_aux
+\end_layout
+
+\begin_layout Plain Layout
+0000000000003df8 d __do_global_dtors_aux_fini_array_entry
+\end_layout
+
+\begin_layout Plain Layout
+0000000000004008 D __dso_handle
+\end_layout
+
+\begin_layout Plain Layout
+0000000000003e00 d _DYNAMIC
+\end_layout
+
+\begin_layout Plain Layout
+0000000000004010 D _edata
+\end_layout
+
+\begin_layout Plain Layout
+0000000000004018 B _end
+\end_layout
+
+\begin_layout Plain Layout
+0000000000001140 T _fini
+\end_layout
+
+\begin_layout Plain Layout
+0000000000001120 t frame_dummy
+\end_layout
+
+\begin_layout Plain Layout
+0000000000003df0 d __frame_dummy_init_array_entry
+\end_layout
+
+\begin_layout Plain Layout
+00000000000020c0 r __FRAME_END__
+\end_layout
+
+\begin_layout Plain Layout
+0000000000003fc0 d _GLOBAL_OFFSET_TABLE_
+\end_layout
+
+\begin_layout Plain Layout
+w __gmon_start__
+\end_layout
+
+\begin_layout Plain Layout
+0000000000002004 r __GNU_EH_FRAME_HDR
+\end_layout
+
+\begin_layout Plain Layout
+0000000000001000 T _init
+\end_layout
+
+\begin_layout Plain Layout
+0000000000002000 R _IO_stdin_used
+\end_layout
+
+\begin_layout Plain Layout
+w _ITM_deregisterTMCloneTable
+\end_layout
+
+\begin_layout Plain Layout
+w _ITM_registerTMCloneTable
+\end_layout
+
+\begin_layout Plain Layout
+U __libc_start_main@GLIBC_2.34
+\end_layout
+
+\begin_layout Plain Layout
+0000000000001129 T main
+\end_layout
+
+\begin_layout Plain Layout
+00000000000010a0 t register_tm_clones
+\end_layout
+
+\begin_layout Plain Layout
+0000000000001040 T _start
+\end_layout
+
+\begin_layout Plain Layout
+0000000000004010 D __TMC_END__
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+After including the math library to the file header the outputs of ldd and nm seem unchanged.
+ If however I run exp with a variable argument I get a different result for ldd
+\end_layout
+
+\begin_layout Standard
+\begin_inset Box Boxed
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status collapsed
+
+\begin_layout Plain Layout
+ldd exp
+\end_layout
+
+\begin_layout Plain Layout
+linux-vdso.so.1 (0x00007ffc6a307000)
+\end_layout
+
+\begin_layout Plain Layout
+libm.so.6 => /lib/x86_64-linux-gnu/libm.so.6 (0x000078496b830000)
+\end_layout
+
+\begin_layout Plain Layout
+libc.so.6 => /lib/x86_64-linux-gnu/libc.so.6 (0x000078496b600000)
+\end_layout
+
+\begin_layout Plain Layout
+/lib64/ld-linux-x86-64.so.2 (0x000078496b938000)
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+For the first output we only had a single library linked (libc.so.6) but when the math library is called on a variable input the library (libm.so.6) is also linked.
+\end_layout
+
+\begin_layout Section*
+Problem 2
+\end_layout
+
+\begin_layout Standard
+Using the sstream library I convert the command line argument to a string and feed it into the exp function and generate the required output.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Box Boxed
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status collapsed
+
+\begin_layout Plain Layout
+$ ./exp 5
+\end_layout
+
+\begin_layout Plain Layout
+148.413
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The output of ldd shows two extra libraries being linked.
+ The output of nm grows substantially and c++filt demangles its output.
+ 
+\end_layout
+
+\begin_layout Section*
+Problem 3
+\end_layout
+
+\begin_layout Standard
+I defined the routine exp_taylor() in the main function which takes a value of 
+\begin_inset Formula $x$
+\end_inset
+
+ and the number of expansion terms to produce the following output.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Box Boxed
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+\begin_layout Plain Layout
+$./exp
+\end_layout
+
+\begin_layout Plain Layout
+-10 | 4.53999e-05
+\end_layout
+
+\begin_layout Plain Layout
+-8 | 0.000335463
+\end_layout
+
+\begin_layout Plain Layout
+-6 | 0.00247875
+\end_layout
+
+\begin_layout Plain Layout
+-4 | 0.0183156
+\end_layout
+
+\begin_layout Plain Layout
+-2 | 0.135335
+\end_layout
+
+\begin_layout Plain Layout
+0 | 1
+\end_layout
+
+\begin_layout Plain Layout
+2 | 7.38906
+\end_layout
+
+\begin_layout Plain Layout
+4 | 54.5982
+\end_layout
+
+\begin_layout Plain Layout
+6 | 403.429
+\end_layout
+
+\begin_layout Plain Layout
+8 | 2980.96
+\end_layout
+
+\begin_layout Plain Layout
+10 | 22026.5
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+We can use nm to determine whether the routine exp() is being called from inside the executible program file by looking for the function in the nm list.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Box Boxed
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status collapsed
+
+\begin_layout Plain Layout
+Using exp():
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Formula $\quad\quad\quad\quad\quad\quad\quad\quad\ $
+\end_inset
+
+U exp@GLIBC_2.29
+\end_layout
+
+\begin_layout Plain Layout
+Using exp_taylor():
+\end_layout
+
+\begin_layout Plain Layout
+0000000000001214 T _Z10exp_taylordi
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The first column is the address which we can see is not shown for exp() since it is linked from an external library.
+ The second column is the type which for the local routine is T and for the external routine is U (undefined).
+\end_layout
+
+\begin_layout Section*
+Problem 4
+\end_layout
+
+\begin_layout Standard
+In the command line /path/to/foo* expands into all files in the directory /path/to/ whose name begins with foo.
+ 
+\end_layout
+
+\begin_layout Section*
+Problem 5
+\end_layout
+
+\begin_layout Standard
+An instance of running the program.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Box Boxed
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status collapsed
+
+\begin_layout Plain Layout
+$ ./plus 1 5
+\end_layout
+
+\begin_layout Plain Layout
+6
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+Problem 6
+\end_layout
+
+\begin_layout Standard
+Created a library libMain.a built by the object code for the parse add and print routines.
+ This program generates the same output as that of Problem 5.
+\end_layout
+
+\begin_layout Section*
+Problem 7
+\end_layout
+
+\begin_layout Standard
+To create a shared library I used the g++ compiler with a -shared flag.
+ Under the default target plus,
+ I added the flag -Wl,-rpath,.
+ to the compiler command.
+ This is because during the program execution the compiler doesn't automatically check the working directory for the shared library.
+ This was discussed under the 
+\begin_inset Quotes eld
+\end_inset
+
+Mysterious Problems
+\begin_inset Quotes erd
+\end_inset
+
+ section,
+ but I didn't know if there was another standard way of fixing this problem.
+\end_layout
+
+\begin_layout Standard
+Running ldd with and without the flag -Wl,-rpath,.
+ the issue becomes clear
+\end_layout
+
+\begin_layout Standard
+\begin_inset Box Boxed
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+\begin_layout Plain Layout
+Without Flag:
+\end_layout
+
+\begin_layout Plain Layout
+libMain.so => not found
+\end_layout
+
+\begin_layout Plain Layout
+With Flag:
+\end_layout
+
+\begin_layout Plain Layout
+libMain.so => ./libMain.so (0x000071002edf2000)
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The file size of the executible main is 17.2 kB and 20.4 kB for the shared and static library respectively.
+\end_layout
+
+\begin_layout Section*
+Problem 8
+\end_layout
+
+\begin_layout Standard
+Make files were added to all directories.
+\end_layout
+
+\begin_layout Section*
+Problem 9
+\end_layout
+
+\end_body
+\end_document
