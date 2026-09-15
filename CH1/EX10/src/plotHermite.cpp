@@ -9,7 +9,7 @@ void plotLegendre(std::vector<std::string> & canvas , int l) {
   std::vector<double> values(width);
   for (int col = 0; col < width; ++col) {
     double x = -1.0 + 2.0 * col / (width - 1);
-    double y = std::legendre(l, x);
+    double y = std::hermite(l, x);
     values[col] = y;
     if (std::abs(y) > max_value) max_value = std::abs(y);
   }
