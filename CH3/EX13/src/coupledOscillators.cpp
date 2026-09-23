@@ -52,6 +52,7 @@ int main (int argc, char * * argv) {
 
     Genfun::Variable time;
     Genfun::Cos cos;
+    
     Genfun::GENFUNCTION x0 =  coefficients[0]*normalModesX(0,1)*cos(frequencies[0] * time)
                              +coefficients[1]*normalModesX(0,1)*cos(frequencies[1] * time)
                              +coefficients[2]*normalModesX(0,2)*cos(frequencies[2] * time)
