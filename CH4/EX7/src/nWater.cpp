@@ -86,6 +86,12 @@ int main (int argc, char * * argv) {
          << "index of refraction"
 	       << PlotStream::EndP();
   
+  PlotProfile::Properties plotpointsProperties;
+  plotpointsProperties.pen.setColor("black");
+  plotpointsProperties.pen.setWidth(4);
+  plotpoints.setProperties(plotpointsProperties);
+
+  
   view.add(&nWaterPlot);
   view.add(&plotpoints);
   window.show();
