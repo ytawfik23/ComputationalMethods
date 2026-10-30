@@ -1,0 +1,3 @@
+/home/tawfik/Documents/phd/ComputationalMethods/CH10/build/CMakeFiles/skeleton.dir
+/home/tawfik/Documents/phd/ComputationalMethods/CH10/build/CMakeFiles/edit_cache.dir
+/home/tawfik/Documents/phd/ComputationalMethods/CH10/build/CMakeFiles/rebuild_cache.dir
